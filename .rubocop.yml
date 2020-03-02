@@ -43,7 +43,7 @@ Style/IfUnlessModifier:
 Style/ConditionalAssignment:
   Enabled: false
 
-Naming/UncommunicativeMethodParamName:
+Naming/MethodParameterName:
   Enabled: false
 
 Naming/RescuedExceptionsVariableName:
@@ -52,7 +52,7 @@ Naming/RescuedExceptionsVariableName:
 Metrics/ModuleLength:
   Max: 150
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 120
   IgnoredPatterns: ['^\s{0,}\#']
 
@@ -89,12 +89,12 @@ Metrics/PerceivedComplexity:
 Style/Lambda:
   EnforcedStyle: literal
 
-Layout/AlignHash:
+Layout/HashAlignment:
   EnforcedLastArgumentHashStyle: always_ignore
   EnforcedHashRocketStyle: key
   EnforcedColonStyle: key
 
-Layout/AlignArguments:
+Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
 
 Layout/MultilineOperationIndentation:
@@ -116,16 +116,16 @@ Layout/MultilineArrayBraceLayout:
   Enabled: true
   EnforcedStyle: symmetrical
 
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   EnforcedStyle: with_fixed_indentation
 
 Layout/EmptyLineAfterGuardClause:
   Enabled: false
 
-Layout/IndentFirstArgument:
+Layout/FirstArgumentIndentation:
   EnforcedStyle: consistent
 
-Layout/IndentFirstArrayElement:
+Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
 
 Style/ClassAndModuleChildren:
