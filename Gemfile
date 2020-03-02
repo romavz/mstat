@@ -35,7 +35,6 @@ group :development, :test do
   gem 'factory_bot_rails'
 end
 
-
 group :test do
   gem 'shoulda-matchers'
   gem 'shoulda-callback-matchers', '~> 1.1.1'
