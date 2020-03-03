@@ -1,10 +1,6 @@
 class ApplicationController < ActionController::API
   before_action :authenticate
 
-  def logged_in?
-    current_user.present?
-  end
-
   def current_user
     @current_user ||=
       if auth_token.present?
@@ -18,8 +14,12 @@ class ApplicationController < ActionController::API
 
   private
 
+  def logged_in?
+    current_user.present?
+  end
+
   def auth_token
-    request.env['API-AUTH-TOKEN']
+    request.headers['API-AUTH-TOKEN']
   end
 
   def auth

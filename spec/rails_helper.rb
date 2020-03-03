@@ -34,6 +34,7 @@ RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
   config.include RequestHelpers::JsonHelpers, type: :request
   config.include RequestHelpers::JsonHelpers, type: :controller
+  config.include AuthHelpers, type: :controller
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
