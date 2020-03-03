@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :voute do
+  factory :vote do
     user { nil }
     message { nil }
   end

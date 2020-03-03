@@ -1,4 +1,4 @@
-class CreateVoutes < ActiveRecord::Migration[6.0]
+class CreateVotes < ActiveRecord::Migration[6.0]
   def change
     create_table :votes do |t|
       t.references :user, null: false, foreign_key: true
@@ -7,6 +7,6 @@ class CreateVoutes < ActiveRecord::Migration[6.0]
       t.timestamps
     end
 
-    add_index :votes, [:user_id, :message_id], unique: true
+    add_index :votes, %i[user_id message_id], unique: true
   end
 end
