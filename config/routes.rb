@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :messages, only: %i[index show create]
+  resources :votes, only: %i[create]
+  resources :sessions, only: :create
 end
